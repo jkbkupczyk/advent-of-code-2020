@@ -44,14 +44,12 @@ bool validate(PassPolicy passPolicy) {
 	int count = 0;
 
 	for (int i = 0; i < passPolicy.pass.size(); i++) {
-		if (passPolicy.pass.at(i) == passPolicy.letter) {
+		if (passPolicy.pass.at(i) == passPolicy.letter)
 			count++;
-		}
 	}
 
-	if (count >= passPolicy.minChars && count <= passPolicy.maxChars) {
+	if (count >= passPolicy.minChars && count <= passPolicy.maxChars)
 		return true;
-	}
 
 	return false;
 }
