@@ -24,7 +24,7 @@ std::vector<std::string> populateVector(std::string fileName) {
 	return data;
 }
 
-//
+// Count trees ecountered by toboggan
 int countTrees(std::vector<std::string> data, int stepX, int stepY) {
 	int count = 0, x = 0;
 
